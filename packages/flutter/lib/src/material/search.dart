@@ -235,10 +235,11 @@ abstract class SearchDelegate<T> {
         systemOverlayStyle: colorScheme.brightness == Brightness.dark
           ? SystemUiOverlayStyle.light
           : SystemUiOverlayStyle.dark,
-        backgroundColor: colorScheme.brightness == Brightness.dark ? Colors.grey[900] : Colors.white,
+        backgroundColor: colorScheme.brightness == Brightness.dark ? Colors.grey[900] : theme.primaryColorLight,
         iconTheme: theme.primaryIconTheme.copyWith(color: Colors.grey),
         titleTextStyle: theme.textTheme.titleLarge,
         toolbarTextStyle: theme.textTheme.bodyMedium,
+        elevation: 0.0,
       ),
       inputDecorationTheme: searchFieldDecorationTheme ??
           InputDecorationTheme(
